@@ -1,0 +1,238 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: #ff96d8;
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+  --futer: hsl(185, 95%, 8%);
+  --blanco: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 94%);
+  --shadow: #bababa;
+}
+
+/*-------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: var(--blanco);
+}
+html {
+  background-color: #fff;
+  color: #000;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+/*-------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-------------------------------*/
+
+/* ------ BUTTONS ------ */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 50px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-pink:link,
+.btn-pink:visited {
+  background-color: var(--pink);
+  border: 1px solid var(--pink);
+  color: #fff;
+  margin-top: 2rem;
+  box-shadow: 2px 2px 5px var(--pink);
+}
+
+.btn-pink:hover,
+.btn-pink:active {
+  background-color: var(--light-pink);
+  border: 1px solid var(--light-pink);
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-white:link,
+.btn-white:visited {
+  background-color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+  color: var(--black);
+  box-shadow: 2px 2px 5px var(--shadow);
+}
+
+.btn-white:hover,
+.btn-white:active {
+  background-color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+  color: var(--grayish-blue);
+  box-shadow: 2px 2px 5px var(--shadow);
+}
+
+.btn-pink:hover,
+.btn-white:hover {
+  transform: translateY(-3px);
+}
+
+.btn-pink:active,
+.btn-white:active {
+  transform: translateY(-1px);
+}
+
+/* ------ HEADINGS ------ */
+h1 {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+}
+
+/*-------------------------------*/
+/* HEADER */
+/*-------------------------------*/
+
+header {
+  background-image: linear-gradient(
+      rgba(125, 192, 255, 0.2),
+      rgba(125, 192, 255, 0.2)
+    ),
+    url(/images/bg-hero-desktop.svg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5rem;
+}
+
+.logo {
+  width: 100%;
+  flex: 0;
+}
+
+/* ------ GRID ------ */
+.hero_grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 5rem;
+}
+
+.illustration-mockups {
+  width: 100%;
+}
+
+.hero_text-box {
+  margin-top: 9rem;
+}
+
+.hero_text {
+  margin-top: 1rem;
+  margin-right: 3rem;
+  font-size: 150%;
+}
+/*------------------------------------*/
+/* Section 2: Community information */
+/*------------------------------------*/
+.community-description-container {
+  width: 75%;
+  margin: auto;
+  margin-top: 9rem;
+}
+
+.community-idea-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 5px #bababa;
+  margin: 3rem 0;
+  padding: 4rem 6rem;
+}
+
+.community-idea-title {
+  color: var(--very-dark-cyan);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.community-idea {
+  width: 40%;
+}
+
+.community-idea-body {
+  color: var(--grayish-blue);
+  font-size: 1.2rem;
+}
+
+.community-idea-container img {
+  width: 30%;
+}
+
+/* Footer*/
+.footer-card {
+  background-color: var(--blanco);
+
+  text-align: center;
+  margin: 0 auto;
+}
+.futerCh:nth-child(2) {
+  grid-row: 2/3;
+  color: #fff;
+  font-size: small;
+}
+.futer-container {
+  background: var(--futer);
+  display: grid;
+  flex-direction: row;
+}
+.dad-f:nth-child(1) {
+  grid-column: 2/ 3;
+  grid-row: 2 / 3;
+}
+.futer-dad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.futerCh {
+  color: #fff;
+  margin: 1.5rem;
+  font-size: large;
+}
+
+.parr {
+  margin-top: 0.5rem;
+  padding-top: 0 auto;
+}
+.attribution {
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 11px;
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+.dad-icon-footer {
+  margin: 50%;
+  display: flex ;
+  displalex;
+}
+/* ----- ICONS ----- */
