@@ -1,0 +1,83 @@
+/*Mobile devices */
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 0.6rem;
+  }
+
+  /* Hero */
+
+  header {
+    background-image: linear-gradient(
+        rgba(125, 192, 255, 0.2),
+        rgba(125, 192, 255, 0.2)
+      ),
+      url(/images/bg-hero-mobile.svg);
+  }
+  .main_nav {
+    float: left;
+    padding: 20px 10px;
+    margin: 10px;
+  }
+
+  .logo {
+    height: 1rem;
+  }
+
+  .hero_grid {
+    display: ;
+  }
+
+  .btn-white {
+    padding: 0px 0px;
+    width: 1rem;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+
+  img {
+    height: 4rem;
+    width: auto;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+  }
+
+  /* community section */
+
+  .community-idea-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
+
+  .community-idea-container img {
+    height: 7rem;
+    object-fit: contain;
+    width: 210px;
+  }
+
+  .community-idea {
+    width: 100%;
+    padding: 1rem 3rem;
+    text-align: center;
+  }
+
+  .community-idea-title {
+    font-size: 0.8rem;
+  }
+
+  .community-idea-body {
+    font-size: 0.6rem;
+  }
+
+  .community-idea {
+    order: 1;
+  }
+
+  .community-idea-container img {
+    order: 2;
+  }
+}
