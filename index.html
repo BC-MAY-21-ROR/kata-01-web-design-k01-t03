@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="queries.css">
 
   <title>
     Frontend Mentor | Huddle landing page with alternating feature blocks
@@ -67,7 +68,7 @@
     </div>
 
     <div class="community-idea-container">
-      <img src="images/illustration-flowing-conversation.svg" alt="">
+      <img src="images/illustration-flowing-conversation.svg" alt="flowing-conversation">
       <div class="community-idea">
         <h1 class="community-idea-title">
           Flowing Conversations
@@ -90,28 +91,31 @@
           immediately.
         </p>
       </div>
-      <img src="images/illustration-your-users.svg" alt="">
+      <img src="images/illustration-your-users.svg" alt="your-users">
     </div>
   </section>
   <!-- community information -->
 
-  <div class="footer-card">Ready To Build Your Community?
-    <br>
-    <a class="btn btn-pink" href="GetStartet">
-      Get Started For Free
-    </a>
-  </div>
+  <div class="Container-buton-fader">
+    <div class="container-buton-footer">
 
-  <div class="futer-container">
-    <div>
-      <img src="images/logo.svg" alt="">
+      <h2>
+        Ready To Build Your Community?
+      </h2>
+
+      <a class="btn btn-pink" href="#">
+        Get Started For Free
+      </a>
     </div>
-    <div class="futer-dad dad-f">
-      <div class="futerCh">
-        <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
-        <p class="parr">
+  </div>
+  <footer class="container-footer">
+
+    <div class="container-information ">
+      <div class="footer-information user-information">
+        <img style="width:min-content; margin-bottom: 1rem;" src="images/logo.svg" alt="Logo Image">
+        <div>
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="40" height="40"
-            viewbox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+            viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round"
             stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <circle cx="12" cy="11" r="3" />
@@ -119,84 +123,100 @@
           </svg>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua
+        </div>
+        <div class="footer-information">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="40" height="40"
+            viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            <path d="M15 7a2 2 0 0 1 2 2" />
+            <path d="M15 3a6 6 0 0 1 6 6" />
+          </svg>
+          +52-312-150-8470
+        </div>
+        <div class="footer-information">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40"
+            viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>example@huddle.com
+        </div>
+      </div>
+
+    </div>
+    <div class="container-information tags-information">
+
+      <div class="footer-information">
+        <a href="#">About Us</a>
+      </div>
+      <div class="footer-information">
+        <a href="#"> What We Do</a>
+      </div>
+      <div class="footer-information">
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-information">
+        <a href="#">Career</a>
+      </div>
+      <div class="footer-information">
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-information">
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <div class="container-information icon-tag">
+      <div>
+        <a href="#">
+          <!-- Icon Faceboo -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icons-info iconhe icon-tabler icon-tabler-brand-facebook"
+            width="40" height="40" viewbox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+          </svg>
+        </a>
+        <a href="#">
+          <!-- Icon Twiter -->
+          <svg xmlns="http://www.w3.org/2000/svg" class=" icons-info iconhe icon-tabler icon-tabler-brand-twitter"
+            width="40" height="40" viewbox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z">
+            </path>
+          </svg>
+        </a>
+        <a href="#">
+          <!-- Icon Instagram -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icons-info iconhe icon-tabler icon-tabler-brand-instagram"
+            width="40" height="40" viewbox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+            <circle cx="12" cy="12" r="3"></circle>
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+          </svg>
+        </a>
+      </div>
+
+      <div class="attribution">
+        &copy; Copyright 2018 Huddle. All rights reserved.
+
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+          <a href="#">Your Name Here</a>.
         </p>
       </div>
-      <div class="futerCh">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="40" height="40"
-          viewbox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path
-            d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-          <path d="M15 7a2 2 0 0 1 2 2" />
-          <path d="M15 3a6 6 0 0 1 6 6" />
-        </svg>+52-312-150-8470
-      </div>
-      <div class="futerCh">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="40" height="40"
-          viewbox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round"
-          stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <rect x="3" y="5" width="18" height="14" rx="2" />
-          <polyline points="3 7 12 13 21 7" />
-        </svg>example@huddle.com
-      </div>
-      <div class="futerCh">About Us</div>
-      <div class="futerCh">What We Do</div>
-      <div class="futerCh">FAQ</div>
-      <div class="futerCh">Career</div>
-      <div class="futerCh">Blog</div>
-      <div class="futerCh">Contact Us</div>
-    </div>
-    <div class="dad-f dad-icon-footer">
-
-      <a href="#">
-        <!-- Icon Faceboo -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icons-info icon icon-tabler icon-tabler-brand-facebook"
-          width="40" height="40" viewbox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-        </svg>
-      </a>
-      <a href="#">
-        <!-- Icon Twiter -->
-        <svg xmlns="http://www.w3.org/2000/svg" class=" icons-info icon icon-tabler icon-tabler-brand-twitter"
-          width="40" height="40" viewbox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <path
-            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z">
-          </path>
-        </svg>
-      </a>
-      <a href="#">
-        <!-- Icon Instagram -->
-        <svg xmlns="http://www.w3.org/2000/svg" class="icons-info icon icon-tabler icon-tabler-brand-instagram"
-          width="40" height="40" viewbox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-          <rect x="4" y="4" width="16" height="16" rx="4"></rect>
-          <circle cx="12" cy="12" r="3"></circle>
-          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
-        </svg>
-      </a>
-
     </div>
 
-    <div class="attribution dad-fo">
-      <p class="attribution">&copy; Copyright 2018 Huddle. All rights reserved.</p>
-
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-        <a href="#">Your Name Here</a>.
-      </p>
-
-    </div>
-
-  </div>
-  </div>
+  </footer>
 
 </body>
 
