@@ -1,0 +1,289 @@
+/*-------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  background-color: white;
+  color: #000;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*-------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-------------------------------*/
+/* ------ BUTTONS ------ */
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 50px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-pink:link,
+.btn-pink:visited {
+  background-color: #ff52bf;
+  border: 1px solid #ff52bf;
+  color: white;
+  margin-top: 2rem;
+  -webkit-box-shadow: 2px 2px 5px #ff52bf;
+          box-shadow: 2px 2px 5px #ff52bf;
+}
+
+.btn-pink:hover,
+.btn-pink:active {
+  background-color: #ff96d8;
+  border: 1px solid #ff96d8;
+  color: white;
+  margin-right: 15px;
+}
+
+.btn-white:link,
+.btn-white:visited {
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  color: var(--black);
+  -webkit-box-shadow: 2px 2px 5px #bababa;
+          box-shadow: 2px 2px 5px #bababa;
+}
+
+.btn-white:hover,
+.btn-white:active {
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  color: #808d99;
+  -webkit-box-shadow: 2px 2px 5px #bababa;
+          box-shadow: 2px 2px 5px #bababa;
+}
+
+.btn-pink:hover,
+.btn-white:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.btn-pink:active,
+.btn-white:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+/* ------ HEADINGS ------ */
+h1 {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 600;
+}
+
+/*-------------------------------*/
+/* HEADER */
+/*-------------------------------*/
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(125, 192, 255, 0.2)), to(rgba(125, 192, 255, 0.2))), url(/images/bg-hero-desktop.svg);
+  background-image: linear-gradient(rgba(125, 192, 255, 0.2), rgba(125, 192, 255, 0.2)), url(/images/bg-hero-desktop.svg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 100%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 5rem;
+}
+
+.logo {
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+}
+
+/* ------ GRID ------ */
+.hero_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding: 5rem;
+}
+
+.illustration-mockups {
+  width: 100%;
+}
+
+.hero_text-box {
+  margin-top: 9rem;
+}
+
+.hero_text {
+  margin-top: 1rem;
+  margin-right: 3rem;
+  font-size: 150%;
+}
+
+/*------------------------------------*/
+/* Section 2: Community information */
+/*------------------------------------*/
+.community-description-container {
+  width: 75%;
+  margin: auto;
+  margin-top: 9rem;
+}
+
+.community-idea-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px 5px #bababa;
+          box-shadow: 0 0 10px 5px #bababa;
+  margin: 3rem 0;
+  padding: 4rem 6rem;
+}
+
+.community-idea-title {
+  color: #00252e;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.community-idea {
+  width: 40%;
+}
+
+.community-idea-body {
+  color: #808d99;
+  font-size: 1.2rem;
+}
+
+.community-idea-container img {
+  width: 30%;
+}
+
+/* Footer*/
+a:hover {
+  text-decoration: underline;
+}
+
+.attribution {
+  border-radius: 1rem;
+  width: auto;
+  height: auto;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+  text-align: end;
+}
+
+.dadAtt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4px;
+}
+
+.container-footer {
+  background-color: #532151;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.tags-information {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: auto;
+  height: auto;
+}
+
+.user-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+}
+
+.footer-information {
+  margin: 2rem;
+  width: auto;
+  height: auto;
+}
+
+.icon-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.iconhe {
+  border: solid 2px #ffffff;
+  border-radius: 50%;
+  margin-top: 2rem;
+}
+
+.iconhe:hover {
+  border: solid 2px #ff05c9;
+}
+/*# sourceMappingURL=main.css.map */
