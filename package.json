@@ -4,7 +4,9 @@
   "description": "Huddle landing page",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss style.css"
+    "compile:sass": "node-sass sass/main.scss style.css -w",
+    "compile:queries": "node-sass sass/queries.scss queries.css -w",
+    "dev": "concurrently --kill-others \"npm run compile:sass\" \"npm run compile:queries\"" //compile both scss files
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/BC-MAY-21-ROR/kata-01-web-design-k01-t03#readme",
   "devDependencies": {
+    "concurrently": "^6.2.0",
     "node-sass": "^6.0.0"
   }
 }
