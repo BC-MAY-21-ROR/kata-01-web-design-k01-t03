@@ -6,7 +6,7 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss style.css -w",
     "compile:queries": "node-sass sass/queries.scss queries.css -w",
-    "dev": "concurrently --kill-others \"npm run compile:sass\" \"npm run compile:queries\"" 
+    "build": "concurrently --kill-others \"npm run compile:sass\" \"npm run compile:queries\""
   },
   "repository": {
     "type": "git",
