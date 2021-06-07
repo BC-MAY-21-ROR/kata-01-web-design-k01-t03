@@ -46,7 +46,7 @@ Feel free to use any workflow that you feel comfortable with. Below is a suggest
 - Actualizar la sección **Página Web** con la dirección para el acceso a la página web publicada
 
 ## Página web
-- [landing page](https://bc-may-21-ror.github.io/kata-01-web-design-k01-t03/)
+- [landing page](https://kata-01.netlify.app/)
 
 ## Resources
 
